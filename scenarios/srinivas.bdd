@@ -1,0 +1,11 @@
+
+
+SCENARIO: SampleTest
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"]}
+	
+	Given user navigates to httpbin homepage
+	When user clicks html form
+	And fill the html form and submit
+	Then verifies form succesfull submittion
+END
+

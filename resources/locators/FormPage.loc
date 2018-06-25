@@ -1,0 +1,8 @@
+txt.custname.formpage = {\"locator\":\"name=custname\",\"desc\":\"customer name field\"}
+txt.telephone.formpage = {\"locator\":\"name=custtel\",\"desc\":\"telephone number field\"}
+txt.custemail.formpage = {\"locator\":\"name=custemail\",\"desc\":\"customer email field\"}
+radio.lst.pizzasize.formpage = {\"locator\":\"css=input[name='size'][value='small']\",\"desc\":\" radio buttons to select pizza size from list\"}
+chbx.lst.pizzatoppings.formpage = {\"locator\":\"css=input[name='topping'][value='bacon']\",\"desc\":\"radio buttons to select pizza toppings from list\"}
+txt.prefdeliverytime.formpage = {\"locator\":\"css=input[name='delivery']\",\"desc\":\"preffered delivery time field\"}
+txt.deliveryInstructions.formpage = {\"locator\":\"name=comments\",\"desc\":\"Delivery instructions\"}
+btn.submitOrder.formpage = {\"locator\":\"xpath=//button[text()='Submit order']\",\"desc\":\"submit order button\"}

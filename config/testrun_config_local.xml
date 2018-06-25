@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAS Demo" verbose="0" parallel="tests" thread-count="5">
+
+	<test name="Chrome Test" enabled="true">
+		<parameter name="driver.name" value="chromeDriver"></parameter>
+		<parameter name="webdriver.chrome.driver" value="servers/chromedriver.exe"></parameter>
+		<parameter name="scenario.file.loc" value="scenarios"></parameter>
+<!-- 		<parameter name="scenario.file.loc" value="scenarios/srinivas.bdd"></parameter> -->
+
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+
+</suite>
