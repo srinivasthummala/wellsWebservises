@@ -1,11 +1,45 @@
 
 
-SCENARIO: SampleTest
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"]}
-	
+SCENARIO: OrderFormVerificationTest
+META-DATA: {"enabled"=false, "description":" Verifying Order Form ","groups":["SMOKE"]}
+
 	Given user navigates to httpbin homepage
 	When user clicks html form
 	And fill the html form and submit
-	Then verifies form succesfull submittion
+	Then verifies form succesfull submition
 END
 
+SCENARIO: VerifyHTTPGetMethodTest
+META-DATA: {"enabled"=false,"description":"verify http get method response body","groups":["SMOKE"]}
+
+	Given user want to verify get method response
+	Then verifies the presence of headers and attributes in response body
+END
+
+SCENARIO: VerifyHTTPGetMethodTest
+META-DATA: {"enabled"=false, "description":"verify http get method response body","groups":["SMOKE"]}
+
+	Given user want to verify get method response
+	Then verifies the current time formates in response body of "https://now.httpbin.org/"
+END
+
+SCENARIO: VerifyHTTPPostMethodTest
+META-DATA: {"enabled"=false,"description":"verify http get method response body","groups":["SMOKE"]}
+
+	Given user want to verify http post method response
+	Then verifies the presence of headers and attributes in post method response body
+END
+
+SCENARIO: VerifyHTTPDeleteMethodTest
+META-DATA: {"enabled"=false,"description":"verify http delete method response body","groups":["SMOKE"]}
+
+	Given user want to verify http delete method response
+	Then verifies the presence of headers and attributes in delete method response body
+END
+
+SCENARIO: VerifyHTTPPutMethodTest
+META-DATA: {"enabled"=true,"description":"verify http put method response body","groups":["SMOKE"]}
+
+	Given user want to verify http put method response
+	Then verifies the presence of headers and attributes in put method response body
+END
