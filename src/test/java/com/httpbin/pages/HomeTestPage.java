@@ -19,6 +19,7 @@ public class HomeTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 		
 	}
 	
+	//This method clicks on html form link
 	public void navigateToHtmlForm(){
 		lnkHtmlForm.click();
 	}

@@ -1,7 +1,7 @@
 
 
 SCENARIO: OrderFormVerificationTest
-META-DATA: {"enabled"=false, "description":" Verifying Order Form ","groups":["SMOKE"]}
+META-DATA: {"enabled"=true, "description":" Verifying Order Form ","groups":["SMOKE"]}
 
 	Given user navigates to httpbin homepage
 	When user clicks html form
@@ -38,8 +38,9 @@ META-DATA: {"enabled"=false,"description":"verify http delete method response bo
 END
 
 SCENARIO: VerifyHTTPPutMethodTest
-META-DATA: {"enabled"=true,"description":"verify http put method response body","groups":["SMOKE"]}
+META-DATA: {"enabled"=false,"description":"verify http put method response body","groups":["SMOKE"]}
 
 	Given user want to verify http put method response
 	Then verifies the presence of headers and attributes in put method response body
 END
+

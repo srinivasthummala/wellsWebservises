@@ -17,6 +17,7 @@ public class HtmlFormTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 		
 	}
 	
+	//This method fill the html form using form bean
 	public void fillHtmlForm(){
 		HtmlFormBean htmlFormBean = new HtmlFormBean();
 		htmlFormBean.fillRandomData();
@@ -24,6 +25,7 @@ public class HtmlFormTestPage extends WebDriverBaseTestPage<WebDriverTestPage> {
 		
 	}
 	
+	//This method clicks on submit order
 	public void clickSubmitOrder(){
 		btnSubmitOrder.click();
 	}

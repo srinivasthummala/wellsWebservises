@@ -116,6 +116,7 @@ public class WebServisesSteps extends RestWSTestCase {
 		Reporter.log(urlsArray.toString());
 		if (urlsArray.size() > 0) {
 			Validator.verifyThat(urlsArray, Matchers.notNullValue());
+			Validator.verifyThat(urlsArray.size(), Matchers.greaterThan(0));
 		}
 	}
 	
@@ -201,5 +202,4 @@ public class WebServisesSteps extends RestWSTestCase {
 		Validator.verifyThat("origin : ", responseBody.get("origin"), Matchers.notNullValue());
 		Validator.verifyThat("url : ", responseBody.get("url"), Matchers.notNullValue());
 	}
-	
 }

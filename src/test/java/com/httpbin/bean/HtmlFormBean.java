@@ -22,27 +22,19 @@ public class HtmlFormBean extends BaseFormDataBean {
 	public String txtCustEmail;
 	
 	//@Randomizer(dataset= {"small", "medium", "large"})
-	@UiElement(fieldLoc = "radio.lst.pizzasize.formpage ", fieldType = Type.optionbox, order=4)
+	@UiElement(fieldLoc = "radio.lst.pizzasize.formpage", fieldType = Type.optionbox, order=4)
 	public String radioPizzaSize;
 	
-	@Randomizer(dataset= {"bacon", "cheese", "onion"})
-	@UiElement(fieldLoc = "cbx.lst.pizzatoppings.formpage", fieldType = Type.checkbox, order=5)
+	//@Randomizer(dataset= {"bacon", "cheese", "onion"})
+	@UiElement(fieldLoc = "chbx.lst.pizzatoppings.formpage", fieldType = Type.checkbox, order=5)
 	public String chbxPizzaToppings;
 
-	public String getTxtPrefDeliveryTime() {
-		return txtPrefDeliveryTime;
-	}
-
-	public void setTxtPrefDeliveryTime(String txtPrefDeliveryTime) {
-		this.txtPrefDeliveryTime = txtPrefDeliveryTime;
-	}
-
 	@Randomizer(type=RandomizerTypes.DIGITS_ONLY,minval=11, maxval=21)
-	@UiElement(fieldLoc = "txt.prefdeliverytime.formpage", fieldType = Type.textbox, order=6)
+	//@UiElement(fieldLoc = "txt.prefdeliverytime.formpage", fieldType = Type.textbox, order=6)
 	public String txtPrefDeliveryTime;
 	
 	@Randomizer(type = RandomizerTypes.LETTERS_ONLY,length=6)
-	@UiElement(fieldLoc = "txt.deliveryInstructions.formpage ", fieldType = Type.textarea, order=7)
+	@UiElement(fieldLoc = "txtarea.deliveryInstructions.formpage", fieldType = Type.textarea, order=7)
 	public String txtDeliveryInstructions;
 
 	public String getTxtCustName() {
@@ -77,5 +69,12 @@ public class HtmlFormBean extends BaseFormDataBean {
 		this.txtDeliveryInstructions = txtDeliveryInstructions;
 	}
 	
+	public String getTxtPrefDeliveryTime() {
+		return txtPrefDeliveryTime;
+	}
+
+	public void setTxtPrefDeliveryTime(String txtPrefDeliveryTime) {
+		this.txtPrefDeliveryTime = txtPrefDeliveryTime;
+	}
 	
 }
